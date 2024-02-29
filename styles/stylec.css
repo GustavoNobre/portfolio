@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --fonte-primaria: 'krona one', sans-serif;
+    --fonte-secundaria: 'montserrat', sans-serif;
+
+    --cor-primaria: #363062;
+    --cor-secundaria: #818FB4;
+    --cor-terciaria: #F5E8C7;
+    --cor-hover: #435585;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: white;
+
+}
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.principal {
+    padding: 5% 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.apresentacao__curriculo {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    color: var(--cor-secundaria);
+}
+.apresentacao__curriculo__titulo {
+    font-size: 1.5rem;
+    padding: 0% 10%;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+.apresentacao__curriculo__texto {
+    padding: 2% 0;
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+}
+
+
+.rodape {
+    background-color: var(--cor-terciaria) ;
+    color: var(--cor-primaria);
+    text-align: center;
+    padding: 20px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+        justify-content: center;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .principal {
+        flex-direction: column;
+        padding: 5%;
+    }
+    .apresentacao__curriculo {
+        width: auto;
+    }
+}
